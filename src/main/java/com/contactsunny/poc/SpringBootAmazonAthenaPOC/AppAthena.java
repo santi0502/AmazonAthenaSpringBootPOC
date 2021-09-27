@@ -13,9 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
-public class App implements CommandLineRunner {
+public class AppAthena implements CommandLineRunner {
 
-    private static final Logger logger = LoggerFactory.getLogger(App.class);
+    private static final Logger logger = LoggerFactory.getLogger(AppAthena.class);
 
     private static final String ATHENA_DATABASE = "defauld";
 
@@ -25,7 +25,7 @@ public class App implements CommandLineRunner {
     private static final long SLEEP_AMOUNT_IN_MS = 1000;
 
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(AppAthena.class, args);
     }
 
     @Override
