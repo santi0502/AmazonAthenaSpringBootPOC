@@ -17,11 +17,11 @@ public class App implements CommandLineRunner {
 
     private static final Logger logger = LoggerFactory.getLogger(App.class);
 
-    private static final String ATHENA_DATABASE = "athenatest";
+    private static final String ATHENA_DATABASE = "defauld";
 
-    private static final String ATHENA_OUTPUT_S3_FOLDER_PATH = "s3://athena-poc-contactsunny/";
+    private static final String ATHENA_OUTPUT_S3_FOLDER_PATH = "s3://k12-qa-config-bucket/AWSLogs/786831149265/Config/us-east-1";
 
-    private static final String SIMPLE_ATHENA_QUERY = "select * from sampledata limit 10;";
+    private static final String SIMPLE_ATHENA_QUERY = "select * from awsconfig_partitioned limit 10;";
     private static final long SLEEP_AMOUNT_IN_MS = 1000;
 
     public static void main(String[] args) {
